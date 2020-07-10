@@ -1,52 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./sass_group/marquee.css">
+    <title>~歡迎蒞臨~ 添興窯陶藝村</title>
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- 共用style  -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- container使用 -->
+    <link rel="stylesheet" href="./sass_group/reservation.css">
+
+    <!-- 最下面bottom使用 -->
+    <link rel="stylesheet" href="./sass_group/bottom.css" />
+
+    <!-- radio使用 -->
+    <link rel="stylesheet" href="./sass_group/radio.css">
+
+    <!--套件CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--套件CDN-->
+
+    <!--CSS檔外連-->
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!--CSS檔外連-->
+
 </head>
-
-
-<style>
-    /* ----------------------------------------------- */
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-    }
-
-</style>
 
 <body>
 
-    <div class="marquee">
-        <div class="marquee--inner">
-            <span>
-                <div class="orb marquee_1"></div>
-                <div class="orb marquee_2"></div>
-                <div class="orb marquee_3"></div>
-                <div class="orb marquee_4"></div>
-                <div class="orb marquee_5"></div>
-                <div class="orb marquee_6"></div>
-            </span>
-            <span>
-                <div class="orb marquee_1"></div>
-                <div class="orb marquee_2"></div>
-                <div class="orb marquee_3"></div>
-                <div class="orb marquee_4"></div>
-                <div class="orb marquee_5"></div>
-                <div class="orb marquee_6"></div>
-            </span>
+    <div class="loading_page fixed-top">
+        <!--Loading-->
+        <div class="loader">Loading...</div>
+    </div>
 
+    <header class="header fixed-top">
+        <div id="headerSection" class="container">
+            <div class="headerContent">
+                <h1 class="logo">
+                    <img src="./logo.png" alt="添興窯logo">
+                </h1>
+                <nav class="navBar">
+                    <ul class="mainMenu">
+                        <h2>Nav Bar</h2>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">關於添興</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">參觀資訊</span></a>
+                            <ul class="subMenu">
+                                <li><a href="#"><span class="select">車票與交通</span></a></li>
+                                <li><a href="#"><span class="select">環境設施</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">DIY體驗</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">經典商品</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">周邊景點</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">團體預約</span></a>
+                        </li>
+                    </ul>
+                    <div class="icon">
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-fb-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-fb.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-ig-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-ig.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-twitter-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-twitter.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-youtube-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-youtube.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <div class="burgar_btn ">
+                    <a href="#">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <a href="#" class="reservation">
+        <span>
+            我
+            要
+            預
+            約
+        </span>
+    </a>
+    <a href="#" class="gototop"></a>
+
+    <div class="bg_reservation"></div>
+    <!-- 標題區塊 -->
+
+
+    
+    <section id="title">
+        <div class="container">
+            <div class="title-main">
+                <h1><img src="./img/title-form.svg" alt="DIY體驗"></h1>
+                <h3>為維護您的旅遊品質，十人以上團請先預約。</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="bigbox_1">
+        <div class="bigbox_1_img"></div>
+        <div class="form_1">
+            <div class="formbox_1">
+                <div class="name">
+                    <div class="name_font">聯絡人姓名*</div>
+                    <div class="name_text">
+                        <div class="name_line">
+                            <input type="text" placeholder="請輸入姓名" required>
+                        </div>
+                        <div class="name_radio">
+                            <div class="test_1">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="radio-btn"/>先生
+                                    </li>
+
+                                    <li>
+                                        <input type="radio" name="radio-btn"/>小姐
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tel">
+                    <div class="tel_font">聯絡人電話*</div>
+                    <div class="tel_text">
+                        <input type="number" placeholder="請輸入電話號碼" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="formbox_2">
+                <div class="email">
+                    <div class="email_font">Email</div>
+                    <div class="email_text">
+                        <input type="email" placeholder="請輸入Email">
+                    </div>
+                </div>
+                <div class="people">
+                    <div class="people_font">人數*</div>
+                    <div class="people_text">
+                        <div class="adult">成人</div>
+                        <div class="adult_num">
+                            <input type="number" required>
+                        </div>
+                        <div class="child">孩童</div>
+                        <div class="child_num">
+                            <input type="number" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="formbox_3">
+                <div class="date">
+                    <div class="date_font">預約日期*</div>
+                    <div class="date_text">
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="time">
+                    <div class="time_font">預約時段*</div>
+                    <div class="time_text">
+                        <select name="" id="" required>
+                            <option value="">09:00</option>
+                            <option value="">10:00</option>
+                            <option value="">11:00</option>
+                            <option value="">13:00</option>
+                            <option value="">14:00</option>
+                            <option value="">15:00</option>
+                            <option value="">16:00</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="formbox_4">
+                <div class="remarks_font">留言備註</div>
+                <div class="remarks_container">
+                    <form id="remarks_contact" action="" method="post">
+                        <fieldset>
+                            <textarea placeholder="若有其他需求請於此留言" tabindex="5" required></textarea>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- --------------------------------------------------------------------- -->
+
+    <!-- <div class="bigbox_2">
+        <div class="bigbox_2_img"></div>
+        <div class="form_2">
+            <div class="section-cards py-5">
+                <div class="container d-flex">
+
+
+
+                    <div class="row">
+
+
+                        <div class="col-12 col-lg-4">
+                            <div class="card mb-2">
+                                <img src="./img/form_1.jpg" class="card-img-top">
+                                <div class="tour">
+                                    <input type="checkbox" name="check-box" /> <span>手捏陶藝體驗</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+                            <div class="card mb-2">
+                                <img src="./img/form_2.jpg" class="card-img-top">
+                                <div class="tour">
+                                    <input type="checkbox" name="check-box" /> <span>拉坏陶藝體驗</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+                            <div class="card mb-2">
+                                <img src="./img/form_3.jpg" class="card-img-top">
+                                <div class="tour">
+                                    <input type="checkbox" name="check-box" /> <span>園區導覽參觀</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bigbox_3">
+        <div class="form_3">
+            <h1>注意事項</h1>
+            <h6>團體預約限10人以上並於活動前7日預約，若無法前往請透過電話、Facebook、Line聯繫，送出後將於活動前5日本館再次電聯確認，若無法聯繫上活動將自動取消，敬請各位朋友們留意。</h6>
+        </div>
+    </div> -->
+
+    <!-- <div class="button">
+        <div class="btn_text">確定送出</div>
+    </div> -->
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-phone-h.svg" alt="服務專線" width="78">
+                            <div>
+                                <h4>服務專線</h4>
+                                <h3>04-9278-1130</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-mail-h.svg" alt="聯絡我們" width="78">
+                            <div>
+                                <h4>聯絡我們</h4>
+                                <h3>tianxingkiln@gmail.com</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-time-h.svg" alt="營業時間" width="78">
+                            <div>
+                                <h4>營業時間</h4>
+                                <h3>9:00am~17:30pm</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="footer-social">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <h3>南投縣集集鎮田寮里楓林巷十號</h3>
+                        <h4>All Copyright c Reserved by Tian Xing Kiln Ceramic Art Co., Ltd.</h4>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+
+                        <div class="social-icons">
+                            <div class="icon-fb"></div>
+                            <div class="icon-ig"></div>
+                            <div class="icon-twitter"></div>
+                            <div class="icon-yt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap 共3排 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- bottom js外連 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+
+
+    <!--JS CDN套件-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!--JS CDN套件-->
+
+    <!--JS檔外連-->
+    <script src="./js/loading.js"></script>
+    <script src="./js/nav.js"></script>
+    <!--JS檔外連-->
+
+
     <script>
 
+        //bottom的js
+        var $button = document.querySelector('.button');
+        $button.addEventListener('click', function () {
+            var duration = 0.3,
+                delay = 0.08;
+            TweenMax.to($button, duration, { scaleY: 1.6, ease: Expo.easeOut });
+            TweenMax.to($button, duration, { scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay });
+            TweenMax.to($button, duration * 1.25, { scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+        });
+
+        // 漢堡條的js
+        var burgar = document.querySelector(".burgar_btn")
+        var nav = document.querySelector(".navBar")
+        burgar.onclick = function () {
+            if (nav.className.indexOf('active') == -1) {
+                nav.classList.add("active")
+
+            } else {
+                nav.classList.remove("active")
+            }
+        }
+
+        // radio + 打勾的js
+        $('input[name="radio-btn"]').wrap('<div class="radio-btn"><i></i></div>');
+        $(".radio-btn").on('click', function () {
+            var _this = $(this),
+                block = _this.parent().parent();
+            block.find('input:radio').attr('checked', false);
+            block.find(".radio-btn").removeClass('checkedRadio');
+            _this.addClass('checkedRadio');
+            _this.find('input:radio').attr('checked', true);
+        });
+        $('input[name="check-box"]').wrap('<div class="check-box"><i></i></div>');
+        $.fn.toggleCheckbox = function () {
+            this.attr('checked', !this.attr('checked'));
+        }
+        $('.check-box').on('click', function () {
+            $(this).find(':checkbox').toggleCheckbox();
+            $(this).toggleClass('checkedBox');
+        });
 
     </script>
 </body>
