@@ -422,50 +422,6 @@ h1{
     .name_line  input {
         width: 90%;
     }
-
-    /* .bigbox_2{
-        width: 900px;
-    } 
-
-    .form_2{
-        background-color: aqua;
-        display: flex;
-    }
-
-    .section-cards .container{
-        all:unset;     
-    }
-
-    .container .d-flex{
-        background-color: tomato; 
-    }
-    
-    .card{
-        background-color: wheat;
-    }
-    
-
-    .section-cards{
-        width: 100%;
-        background-color: violet;
-    }
-
-    .card img{
-        width: 200px;
-        height: 200px;
-    }
-
-    .col-12{
-        background-color: tomato;
-        width: 85px;
-    } */
-
-
-
-
-
-
-
 }
 
 @media(max-width:770px) {
@@ -480,7 +436,7 @@ h1{
 }
 
 
-@media(max-width:576px) {
+@media(max-width:850px) {
 
     .bigbox_1{
         width: 450px;

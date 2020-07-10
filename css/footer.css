@@ -56,7 +56,7 @@ footer {
 }
 
 
-.icon-fb, .icon-ig, .icon-twitter, .icon-yt{
+.icon-fb, .icon-ig, .icon-twitter, .icon-line{
     margin: 0 0 0 10px;
     width: 36px;
     height: 36px;
@@ -74,8 +74,8 @@ footer {
     background-image: url('../img/icon-twitter.svg');
 }    
 
-.icon-yt{
-    background-image: url('../img/icon-youtube.svg');
+.icon-line{
+    background-image: url('../img/icon-line.svg');
 }  
 
 .icon-fb:hover{
@@ -96,8 +96,8 @@ footer {
     transform:rotate(360deg);
 } 
 
-.icon-yt:hover{
-    background-image: url('../img/icon-youtube-h.svg');
+.icon-line:hover{
+    background-image: url('../img/icon-line-h.svg');
     transition: 0.4s;
     transform:rotate(360deg);
 }
@@ -108,7 +108,7 @@ footer {
         justify-content: center;
     }
 
-    .icon-fb, .icon-ig, .icon-twitter, .icon-yt{
+    .icon-fb, .icon-ig, .icon-twitter, .icon-line{
     margin: 0 0 0 10px;
     width: 20px;
     height: 20px;

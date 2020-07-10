@@ -1,16 +1,6 @@
 *{
-    scroll-behavior: smooth !important;
+    /* outline: 1px solid red; */
 }
-
-body {
-    background: linear-gradient(180deg, rgba(171, 136, 93, 1)29%, rgba(189, 158, 143, 1)60%);
-    margin: 0;
-    /* height:2860px; */
-    overflow-x: hidden;
-    font-family: Arial, "Noto Sans TC", STXihei, "HEITI TC", "HEITI TC", 黑體-繁, 微軟正黑體, 黑體, sans-serif;
-    background-image: url('../../img/background.jpg');
-}
-
 /* JS操控的CSS樣式 */
 
 .active {
@@ -48,6 +38,7 @@ h2{
 
 .header {
     background-color: white;
+    box-shadow: 0px 3px 5px rgba(153, 153, 153, 0.7);
 }
 
 #headerSection {
@@ -79,7 +70,6 @@ h2{
 .headerContent .navBar .mainMenu {
     display: flex;
     justify-content: space-around;
-    padding: 0 0 0 25px;
 }
 .navBar ul {
     list-style: none;
@@ -91,7 +81,7 @@ h2{
 }
 .navBar a {
     display: block;
-    padding: 31px 10px;
+    padding: 31px 9px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 15px;
@@ -137,18 +127,19 @@ width: 120px;
  display: none;   
 }
 
+.selectph{
+    display: none;
+}
+
   /*-----------RWD設定---------*/
   @media (max-width: 768px) {
     .headerContent{
       justify-content: center;
-      /* padding: 0 80px 0 0; */
     }
     .header{
         position: relative;
         position: sticky;
     }
-
-
     .headerContent .logo img {
         width: 260px;
     }
@@ -188,6 +179,15 @@ width: 120px;
     .subMenu>li{
     display: none;
     }
+    .selectph{
+        display: block;
+    }
+    .navBar a{
+        padding: unset;
+    }
+    .visit{
+        display: none;
+    }
     /*-----icon圖片轉換-----*/
     .icon{
     width: 100%;
@@ -203,7 +203,7 @@ width: 120px;
     margin: 100px 19px 0 19px;
     }
     .icon_pic{
-    width: 80%;
+    width: 100%;
     position: absolute;
     }
     .icon_change img:last-child:hover{
@@ -240,9 +240,14 @@ width: 120px;
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
+
+
+
+
+
 }
    
-
+/* 
 p {
     display: block;
     margin-block-start: 1em;
@@ -250,88 +255,6 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
-.reservation {
-    padding: 0 2px;
-    position: absolute;
-    background-color: orange;
-    position: fixed;
-    right: 50px;
-    bottom: 180px;
-    width: 60px;
-    height: 180px;
-    border-radius: 30px;
-    z-index: 80;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ */
 
 
-
-.reservation>span {
-    text-align: center;
-    color: white;
-    font-weight: 900;
-    font-size: 25px;
-}
-
-.gototop {
-    position: absolute;
-    position: fixed;
-    right: 50px;
-    bottom: 100px;
-    width: 60px;
-    height: 60px;
-    background-image: url('../img/gototop.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    z-index: 80;
-}
-
-.reservation:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.gototop:hover {
-    transform: scale(1.25);
-    transition: 0.5s;
-}
-
-
-@media (max-width:768px) {
-    .reservation {
-        width: 45px;
-        height: 180px;
-        bottom: 100px;
-        right: 25px;
-        font-size: 15px;
-    }
-    
-    .reservation>span {
-        text-align: center;
-        color: white;
-        font-weight: 900;
-        font-size: 20px;
-    }
-
-    .gototop {
-        position: absolute;
-        position: fixed;
-        right: 25px;
-        bottom: 40px;
-        width: 45px;
-        height: 45px;
-        background-image: url('../img/gototop.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        z-index: 80;
-    }
-
-}
