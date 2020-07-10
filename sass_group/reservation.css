@@ -399,7 +399,7 @@ h1{
     }
 
     .test_1{
-        height: 800px;
+        /* height: 800px; */
     }
 
     .bigbox_1_img{
@@ -485,13 +485,10 @@ h1{
     .bigbox_1{
         width: 450px;
     }
-
     .test_1 , .name_radio{
         margin: -15px 0 0 0;
     }
-
     .formbox_3 .date .date_text input {
-        width: 150%;
+        width: 140%;
     }
-
 }
