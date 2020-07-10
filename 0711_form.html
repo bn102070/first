@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./sass_group/reservation.css">
 
     <!-- 最下面bottom使用 -->
-    <link rel="stylesheet" href="../sass_group/bottom.css" />
+    <link rel="stylesheet" href="./sass_group/bottom.css" />
 
     <!-- nav使用 -->
     <link rel="stylesheet" href="./css/nav.css">
@@ -244,6 +244,17 @@
     <!-- ***************************************************************** -->
 
 
+    <!-- <div class="bigbox_3">
+        <div class="form_3">
+            <h1>注意事項</h1>
+            <h6>團體預約限10人以上並於活動前7日預約，若無法前往請透過電話、Facebook、Line聯繫，送出後將於活動前5日本館再次電聯確認，若無法聯繫上活動將自動取消，敬請各位朋友們留意。</h6>
+        </div>
+    </div>
+
+    <div class="button">
+        <div class="btn_text">確定送出</div>
+    </div> -->
+
 
 
     <!-- gototop -->
@@ -252,6 +263,8 @@
             我要預約
         </span>
     </a>
+
+
     <a href="#" class="gototop"></a>
 
 
@@ -326,11 +339,21 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+    <!-- bottom js外連 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
     <script src="./js/loading.js"></script>
     <script src="./js/nav.js"></script>
 
     <script>
-
+       //bottom的js
+       var $button = document.querySelector('.button');
+        $button.addEventListener('click', function () {
+            var duration = 0.3,
+                delay = 0.08;
+            TweenMax.to($button, duration, { scaleY: 1.6, ease: Expo.easeOut });
+            TweenMax.to($button, duration, { scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay });
+            TweenMax.to($button, duration * 1.25, { scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+        });
 
     </script>
 
