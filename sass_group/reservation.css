@@ -439,7 +439,7 @@ h1{
 @media(max-width:700px) {
 
     .bigbox_1{
-        width: 400px;
+        width: 350px;
     }
     .test_1 , .name_radio{
         margin: -15px 0 0 0;
