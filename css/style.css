@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+}
+
+*{
+box-sizing: border-box;
+font-family: Arial, "Noto Sans TC", STXihei, "HEITI TC", "HEITI TC", 黑體-繁, 微軟正黑體, 黑體, sans-serif;
+}
+
+header{
+    background-color: white;
+}
+
+/* 每頁上方標題 */
+#title{
+    padding: 90px 0 120px 0;
+}
+
+#title h1{
+    width: 300px; 
+    margin: auto;
+
+}
+
+#title h3{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 200;
+    width: 360px;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+@media screen and (max-width: 480px) {
+#title{
+    padding: 40px 0 40px 0;
+}
+
+#title h1{
+    width: 300px;
+    margin: auto;
+
+}
+
+#title h3{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 200;
+    width: 280px;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;      
+}
+
+}
