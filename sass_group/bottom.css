@@ -5,6 +5,7 @@
     justify-content:center;
 }
 
+
 .button {
     background: brown;
     width: 300px;
@@ -13,6 +14,11 @@
     position: absolute;
     border-radius: 50px;
 }
+
+.button:hover{
+    background: rgb(206, 120, 120);
+}
+
 .btn_text{
     width: 100px;
     height: 30px;
