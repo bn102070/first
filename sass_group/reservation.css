@@ -442,6 +442,9 @@ input:focus {
         width: 90%;
     }
 
+    .name_radio ul{
+        padding: 38px 0 0 0;
+    }
 /****************************************/
     .bigbox_2{
         width: 650px;
@@ -540,6 +543,7 @@ input:focus {
         width: 90%;
     }
 
+
     /*********************************/
     .lesson_box_1{
         width: 180px;
@@ -600,6 +604,10 @@ input:focus {
         height: 15%;
         width: 100%;
     } 
+
+    .name_radio ul{
+        padding: 80px 0 0 0;
+    }
 
 /* ****************************************** */
     .formbox_2{
@@ -739,6 +747,7 @@ input:focus {
     .test_1 , .name_radio{
         margin: -15px 0 0 0;
     }
+
     .formbox_3 .date .date_text input {
         width: 140%;
     }

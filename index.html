@@ -153,25 +153,19 @@
                     <div class="name_font">
                         <div class="name_text">聯絡人姓名*</div>
                         <div class="name_line">
-                            <input type="text" placeholder="請輸入姓名" required>
+                            <input type="text" placeholder="請輸入姓名" id="name" required>
                         </div>
                     </div>
-
-
                     <div class="name_radio">
-                            <ul>
-                                <li>
-                                    <input type="radio" name="radio-btn" />先生
-                                </li>
-
-                                <li>
-                                    <input type="radio" name="radio-btn" />小姐
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                <input type="radio" name="radio-btn" />先生
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-btn" />小姐
+                            </li>
+                        </ul>
                     </div>
-
-
-
                 </div>
 
 
@@ -189,7 +183,7 @@
             <div class="empty"></div>
 
 
-            
+
             <div class="formbox_2">
                 <div class="email">
                     <div class="email_font">Email</div>
@@ -304,7 +298,7 @@
 
 
     <div class="btn_box">
-        <div class="button">
+        <div class="button" id="sumbit">
             <div class="btn_text">確定送出</div>
         </div>
     </div>
@@ -429,11 +423,7 @@
             TweenMax.to($button, duration, { scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay });
             TweenMax.to($button, duration * 1.25, { scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
         });
-
-
-
-
-
+        
     </script>
 
 </body>
