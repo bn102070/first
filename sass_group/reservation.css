@@ -644,10 +644,6 @@ input:focus {
         background-image: unset;
     }
 
-}
-
-
-@media(max-width:700px) {
 
     .bigbox_1{
         width: 450px;
@@ -690,21 +686,55 @@ input:focus {
 
     .lesson_1_img{
         width: 400px;
-        border-radius: unset;
+        border-radius: 8px;
     }
 
     .lesson_2_img{
         width: 400px;
-        border-radius: unset;
+        border-radius: 8px;
     }
 
     .lesson_3_img{
         width: 400px;
-        border-radius: unset;
+        border-radius: 8px;
     }
 }
 
 @media(max-width:576px) {
+
+
+    .bigbox_1{
+        width: 380px;
+    }
+
+    .bigbox_2{
+        width: 380px;
+    }
+
+    .lesson_box_1{
+        width: 350px;
+    }
+
+    .lesson_box_2{
+        width: 350px;
+    }
+
+
+    .lesson_box_3{
+        width: 350px;
+    }
+
+    .lesson_1_img{
+        width: 350px;
+    }
+
+    .lesson_2_img{
+        width: 350px;
+    }
+
+    .lesson_3_img{
+        width: 350px;
+    }
 
     .test_1 , .name_radio{
         margin: -15px 0 0 0;
@@ -712,7 +742,6 @@ input:focus {
     .formbox_3 .date .date_text input {
         width: 140%;
     }
-
 
 }
 
